@@ -1,5 +1,6 @@
 from __future__ import unicode_literals
 import sys
+import datetime
 import youtube_dl
 from urllib.parse import urlparse, urlunparse
 
@@ -122,8 +123,8 @@ def main(args):
             except:
                 pass
     
-    if combined_name is not None:
-        output_filename = 'output.mp4'
+    if combined_name is None:
+        output_filename = f'{datetime.datetime.now().strftime("%Y-%m-%d' %H:%M:%S")}_output.mp4'
     else:
         output_filename = combined_name
 
@@ -132,5 +133,8 @@ def main(args):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1:])
-
+    if len(sys.argv) > 1:
+        main(sys.argv[1:])
+    else:
+        print('Input not specified')
+        exit()
