@@ -2,6 +2,5 @@ name: vimeo-private
 channels:
   - defaults
 dependencies:
-  - conda-forge::ffmpeg
   - conda-forge::youtube-dl
 prefix: /opt/homebrew/anaconda3/envs/vimeo-private
