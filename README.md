@@ -1,6 +1,6 @@
 # Vimeo Video Downloader
 
-Easy Vimeo Video Downloader
+Easy Vimeo Video Downloader (Yes it also downloads `private` videos)
 
 ```
 python main.py <link>
