@@ -1,8 +1,5 @@
 from __future__ import unicode_literals
-import sys
-import datetime
 import youtube_dl
-from urllib.parse import urlparse, urlunparse
 
 
 
